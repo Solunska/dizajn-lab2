@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payout</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+<div class="grid gap-0 row-gap-3 container" style="padding: 0 470px">
+    <h1 class="display-4"><strong>Payment page</strong></h1>
+    <div class="h4 pb-2 mb-4 border-bottom border-light"></div>
+    <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0"
+         aria-valuemax="100" style="height: 30px">
+        <div class="progress-bar progress-bar-striped" style="width: 100%"><label>Step 4: Payment</label></div>
+    </div>
+    <div class="h4 pt-2 mt-4 border-bottom border-light"></div>
+    <form class="row g-2">
+        <div class="mb-3">
+            <label for="inputCard" class="form-label"><strong>Name on Card</strong></label>
+            <input type="text" class="form-control" id="inputCard">
+        </div>
+        <div class="mb-3">
+            <label for="cardNumber" class="form-label"><strong>Card Number</strong></label>
+            <input type="text" class="form-control" id="cardNumber">
+        </div>
+        <div class="mb-3">
+            <label for="billingAddress" class="form-label"><strong>Billing Address</strong></label>
+            <input type="text" class="form-control" id="billingAddress">
+        </div>
+        <div class="col me-2">
+            <label for="inputCvc" class="form-label"><strong>CVC</strong></label>
+            <input placeholder="ex. 311" type="text" class="form-control" id="inputCvc">
+        </div>
+        <div class="col me-2">
+            <label for="inputExpiration" class="form-label"><strong>Expiration</strong></label>
+            <input placeholder="MM" type="text" class="form-control" id="inputExpiration">
+        </div>
+        <div class="col pt-2 ">
+            <label for="inputZip" class="form-label"></label>
+            <input placeholder="YYYY" type="text" class="form-control" id="inputZip">
+        </div>
+    </form>
+    <div class="h4 pt-2 mb-4 mt-4 border-bottom border-light"></div>
+    <button type="button" class="btn btn-info mb-2" style="width: 100%"><span class="border border-1 rounded-pill"> <label
+            style="width: 200px; color: #94d094"><strong>Your total today: $300</strong></label></span>
+    </button>
+    <button type="button" class="btn btn-primary" style="width: 100%"><strong>Pay »</strong></button>
+</div>
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
